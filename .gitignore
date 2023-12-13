@@ -47,3 +47,4 @@ terraform.rc
 *.vsix
 
 shutdown.zip
+backend.tf

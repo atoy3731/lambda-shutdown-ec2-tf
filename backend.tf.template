@@ -1,0 +1,9 @@
+# Uncomment the below section & update values before initializing Terraform to store your state in an S3 bucket.
+
+# terraform {
+#   backend "s3" {
+#     bucket = "atoy-lambda-shutdown-bucket"
+#     key    = "lambda-shutdown-tf"
+#     region = "us-west-1"
+#   }
+# }
