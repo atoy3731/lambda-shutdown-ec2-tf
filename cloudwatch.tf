@@ -1,7 +1,7 @@
 resource "aws_cloudwatch_event_rule" "lambda" {
-  name                  = "run-lambda-function"
-  description           = "Schedule lambda function"
-  schedule_expression   = "cron(0 3 * * ? *)"
+  name                = "run-lambda-function"
+  description         = "Schedule lambda function"
+  schedule_expression = "cron(${var.cron_schedule})"
 }
 
 resource "aws_cloudwatch_event_target" "lambda-function-target" {
