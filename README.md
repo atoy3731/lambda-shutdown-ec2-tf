@@ -12,13 +12,13 @@ This Terraform will provision a scheduled Lambda function to shut down EC2s acro
 
 ## Usage
 
-1. In the root of this directory, run `terraform plan` with your any variables to overwrite and validate the output:
+1. In the root of this directory, run `terraform plan` with your any variables to overwrite and validate the output, for example:
 
 ```bash
 terraform plan --set skip_regions=us-east-1,us-east-2
 ```
 
-2. If the output looks correct, run `terraform apply` with the same overwritten variables, typing `yes` when prompted:
+2. If the output looks correct, run `terraform apply` with the same overwritten variables, typing `yes` when prompted, for example:
 
 ```bash
 terraform apply --set skip_regions=us-east-1,us-east-2
